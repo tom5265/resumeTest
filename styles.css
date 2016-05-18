@@ -138,4 +138,22 @@
 
 .experience {
     background-color: #edeeef;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.experience h1 {
+    padding-bottom: 1.25em;
+}
+
+.experience h3 {
+    text-transform: uppercase;
+}
+
+.experience p {
+    line-height: 25px;
+}
+
+.skills {
+    background-color: #fff;
 }
