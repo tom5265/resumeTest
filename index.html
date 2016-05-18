@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
 </head>
-
 <body>
     <section class="header">
         <div class="overlay"></div>
         <div class="message">
             <h3><em>Tom Moore: Front-End developer looking to solve healthcare's problems.</em></h3>
-            <h1>Let's build great software and help others.</h1>
+            <h1>Let's build great software and <span id="changing">help others.</span></h1>
             <button id="btn" type="button" onclick="scrolling()">Learn More</button>
         </div>
     </section>
@@ -62,19 +63,19 @@
                     <p>Built and managed the East Coast customer support team to improve the customer experience in RDU, Atlanta
                         and New York City markets. Developed and managed a team of 10, including hiring and training.</p>
                 </div>
+                 <div class="col-md-4">
+                    <h3>CPC Intersect</h3>
+                    <h5>Event Manager</h5>
+                    <h6>September 2013</h6>
+                    <p>Planned and executed promotional marketing event for Sharwood's Indian cooking sauces' expansion into
+                        big-box stores in the United States.</p>
+                </div>
                 <div class="col-md-4">
                     <h3>Zoom Insights, Inc.</h3>
                     <h5>Marketing Manager</h5>
                     <h6>June 2013 - January 2014</h6>
                     <p>Provided account and project management for CPG marketing and market research clients while personally
                         conducting field research to analyze buyer climate across the United States.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>CPC Intersect</h3>
-                    <h5>Event Manager</h5>
-                    <h6>September 2013</h6>
-                    <p>Planned and executed promotional marketing event for Sharwood's Indian cooking sauces' expansion into
-                        big-box stores in the United States.</p>
                 </div>
             </div>
         </div>
@@ -84,14 +85,110 @@
             <div class="row">
                 <h1>Skills</h1>
                 <div class="col-md-4">
-
+                    <div id="markup">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                    </div>
+                    <div class="mover" onmouseover="shaking(markup)" onmouseout="shaking(markup)">
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>LESS</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-
+                    <div id="scripting">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                    </div>
+                    <div class="mover" onmouseover="shaking(scripting)" onmouseout="shaking(scripting)">
+                        <p>JavaScript</p>
+                        <p>jQuery</p>
+                        <p>TypeScript</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-
+                    <div id="frameworks">
+                        <i class="devicon-angularjs-plain colored"></i>
+                        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    </div>
+                    <div class="mover" onmouseover="shaking(frameworks)" onmouseout="shaking(frameworks)">
+                        <p>AngularJS</p>
+                        <p>Bootstrap</p>
+                        <p>PlatypusTS</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="education">
+        <div class="container">
+            <h1>
+                Education
+            </h1>
+            <div class="row">
+                <div class="col-md-6">
+                     <div class="card">
+                        <header class="card-top">
+                            <h3 class="title">UNC Kenan-Flagler Business School</h3>
+                            <img class="flexer" src="images/kenan.jpg" alt="UNC-CH">   
+                        </header>                                         
+                        <div class="body">                          
+                            <p>Business Essentials Certificate Program, Spring 2013</p>
+                        </div>
+                    </div>               
+                </div>
+                <div class="col-md-6">
+                    <div id="unc-card" class="card">
+                        <header class="card-top">
+                            <h3 class="title">The University of North Carolina at Chapel Hill</h3>
+                            <img class="flexer" src="images/chapelhill.jpg" alt="UNC-CH">   
+                        </header>                                         
+                        <div id="unc-ch" class="body">                          
+                            <p>B.A., Journalism and Mass Communication, Advertising Sequence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">                       
+                         <div class="card centering">
+                        <header class="card-top">
+                            <h3 class="title">Depot/U Front-End Engineering</h3>
+                            <img class="flexer" src="images/Innovation-Depot.jpg" alt="UNC-CH">   
+                        </header>                                         
+                        <div class="body">                          
+                            <p>Depot/U is a 10-week immersive Front-End engineering bootcamp.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-me">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>
+                        Interested in working with me?
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" onclick="getHired()">Let's Go!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Tom Moore</h2>
+                <ul>
+                    <li><a href="mailto:tom5265@gmail.com">Contact Me</a></li>
+                    <li><a href="https://github.com/tom5265" target="_blank">View GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/moorethom" target="_blank">LinkedIn</a></li>
+                </ul>
+                <p>&#169; Tom Moore, 2016</p>
+                <p>Special thanks to: </p><img src="images/Logo1.png" alt="TheraNest">
             </div>
         </div>
     </section>
