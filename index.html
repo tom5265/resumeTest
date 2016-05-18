@@ -2,15 +2,61 @@
 <html>
     <head>
         <title>Tom's Resume</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>    
         <link type="text/css" rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="scripts.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="jumbotron"><h1>hello world</h1></div>
-        </div>
+        <section class="header">
+            <div class="overlay"></div>
+            <div class="message">
+                <h3><em>Tom Moore: Front-End developer looking to solve healthcare's problems.</em></h3>
+                <h1>Let's build great software and help others.</h1>
+                <button id="btn" type="button" onclick="scrolling()">Learn More</button>
+            </div>      
+        </section>
+        <section id="scroll" class="second">
+            <div class="projects">
+                <h1>My Background</h1>
+                <p>A student of Depot/U Web Development Bootcamp, with proven ability to manage promotional campaigns, research studies and marketing portfolios. Adept at project management with experience working with both research and marketing clients as well as internal customer experience teams in the startup industry.</p>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <h1>My Previous Projects</h1>
+                    <div class="first col-lg-6">
+                        <h2>OnTrack Task Manager App - iPhone & Web</h2>
+                        <img id="ipad" src="images/iPad.png" alt="iOs app">
+                        <p id="first-p">This application was created for users to manage everyday tasks, whether it is a shopping list, cooking recipe, or DIY project.</p>
+                        <p>View on <a href="https://github.com/tom5265/onTrack">GitHub</a></p>
+                    </div>
+                    <div class="padder col-lg-6">
+                        <h2>Platypi Original Work - CoverSharks Remake</h2>
+                        <img id="covershark" src="images/covers.png" alt="CoverSharks">
+                        <p class="top-p">This website was originally created by Platypi's developers. I remade this site with two other students in Depot/U's bootcamp.</p>
+                        <p>View on <a href="https://github.com/tom5265/CoverSharks">GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
