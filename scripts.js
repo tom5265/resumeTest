@@ -34,13 +34,13 @@ window.onload = initiateHelp;
 //prompt box for hiring, and alert
 function getHired() {
     var decision = prompt('Thank you for your interest! Are you 100% sure? (yes/no)');
-    decision.toLowerCase;
-    if (decision === 'yes') {
+    decision = decision.toLowerCase();
+    if (decision ==='yes') {
         alert("Awesome! Let's get going on some projects.")
     }
      else {
          alert("I understand. Maybe next time!");
-     }
+     }  
 }
 
 // jQuery Scroll
